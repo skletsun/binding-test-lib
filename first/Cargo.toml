@@ -1,0 +1,13 @@
+[package]
+name = "first"
+version = "0.1.0"
+authors = ["Sergey Kletsun <sergey.kletsun@gmail.com>"]
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+jni = "0.10.2"
+libloading = "0.5.0"
+second = { path = "../second" }
+lazy_static = "*"
